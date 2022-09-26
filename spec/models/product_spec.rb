@@ -7,8 +7,12 @@ RSpec.describe Product, type: :model do
       @product.save
       expect(@product).to be_present
     end
+    it 'should not validate without name' do
+      @product = Product.new(name: nil, category: @category, quantity: 2, price_cents: 40)
+      expect(@product).to_not be_valid
+      expect(@product.errors.full_messages).to include("Name can't be blank")
+    end
 
   end
-
 
 end
