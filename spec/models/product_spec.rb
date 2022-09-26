@@ -12,7 +12,13 @@ RSpec.describe Product, type: :model do
       expect(@product).to_not be_valid
       expect(@product.errors.full_messages).to include("Name can't be blank")
     end
+    it 'should not validate without price_cents' do
+      @product = Product.new(name: 'prickly', category: @category, quantity: 2, price_cents: nil)
+      expect(@product).to_not be_valid
+      expect(@product.errors.full_messages).to include("Price can't be blank")
+    end
 
-  end
+    end
+
 
 end
