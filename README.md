@@ -1,6 +1,17 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 for purposes of learning Rails.
+this project uses Stripe fotr processing payments .
+
+## Final product
+
+![](./docs/Screen%20Shot%202022-09-27%20at%201.48.28%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%201.49.30%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%201.49.58%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%201.51.13%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%201.55.18%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%201.57.14%20PM.png)
+![](./docs/Screen%20Shot%202022-09-27%20at%202.02.32%20PM.png)
 
 ## Setup
 
@@ -19,7 +30,7 @@ If Rails is complaining about authentication to the database, uncomment the user
 
 ## Stripe Testing
 
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+Use Credit Card # 4242 4242 4242 4242 and add any future date for the expiry field for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
@@ -27,5 +38,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
+- Cypress
 - PostgreSQL 9.x
 - Stripe
